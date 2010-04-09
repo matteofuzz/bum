@@ -1,0 +1,40 @@
+--- 
+/usr/local/lib/ruby/gems/1.8/gems/sproutcore-1.0.1046/frameworks/sproutcore/frameworks/core_tools/fixtures/target.js: 
+  scan_source: 
+    mtime: 1265407743
+    value: 
+    - - sc_require
+      - "'"
+      - models/target
+/usr/local/lib/ruby/gems/1.8/gems/sproutcore-1.0.1046/frameworks/sproutcore/frameworks/core_tools/models/target.js: 
+  scan_source: 
+    mtime: 1265407743
+    value: []
+
+/usr/local/lib/ruby/gems/1.8/gems/sproutcore-1.0.1046/frameworks/sproutcore/frameworks/core_tools/english.lproj/strings.js: 
+  scan_source: 
+    mtime: 1265407743
+    value: []
+
+/usr/local/lib/ruby/gems/1.8/gems/sproutcore-1.0.1046/frameworks/sproutcore/frameworks/core_tools/data_source.js: 
+  scan_source: 
+    mtime: 1265407743
+    value: []
+
+/usr/local/lib/ruby/gems/1.8/gems/sproutcore-1.0.1046/frameworks/sproutcore/frameworks/core_tools/fixtures/test.js: 
+  scan_source: 
+    mtime: 1265407743
+    value: 
+    - - sc_require
+      - "'"
+      - models/test
+/usr/local/lib/ruby/gems/1.8/gems/sproutcore-1.0.1046/frameworks/sproutcore/frameworks/core_tools/core.js: 
+  scan_source: 
+    mtime: 1265407743
+    value: []
+
+/usr/local/lib/ruby/gems/1.8/gems/sproutcore-1.0.1046/frameworks/sproutcore/frameworks/core_tools/models/test.js: 
+  scan_source: 
+    mtime: 1265407743
+    value: []
+

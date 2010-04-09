@@ -1,0 +1,81 @@
+--- 
+/Users/matteo/Development/Sproutcore/bum/apps/bum/views/rating_bar.js: 
+  scan_source: 
+    mtime: 1270243596
+    value: []
+
+/Users/matteo/Development/Sproutcore/bum/apps/bum/main.js: 
+  scan_source: 
+    mtime: 1270030874
+    value: []
+
+/home/matteo/Development/Sproutcore/bum/apps/bum/main.js: 
+  scan_source: 
+    mtime: 1270030874
+    value: []
+
+/Users/matteo/Development/Sproutcore/bum/apps/bum/views/title.js: 
+  scan_source: 
+    mtime: 1270241144
+    value: []
+
+/home/matteo/Development/Sproutcore/bum/apps/bum/resources/loading.rhtml: 
+  scan_source: 
+    mtime: 1270243131
+    value: []
+
+/home/matteo/Development/Sproutcore/bum/apps/bum/resources/main_page.js: 
+  scan_source: 
+    mtime: 1270817672
+    value: 
+    - - sc_require
+      - "'"
+      - core
+    - - sc_require
+      - "'"
+      - views/title
+/Users/matteo/Development/Sproutcore/bum/apps/bum/resources/loading.rhtml: 
+  scan_source: 
+    mtime: 1270243132
+    value: []
+
+/Users/matteo/Development/Sproutcore/bum/apps/bum/resources/main_page.js: 
+  scan_source: 
+    mtime: 1270817672
+    value: 
+    - - sc_require
+      - "'"
+      - core
+    - - sc_require
+      - "'"
+      - views/title
+/Users/matteo/Development/Sproutcore/bum/apps/bum/resources/core.js: 
+  scan_source: 
+    mtime: 1270030874
+    value: []
+
+/home/matteo/Development/Sproutcore/bum/apps/bum/views/rating_bar.js: 
+  scan_source: 
+    mtime: 1270243595
+    value: []
+
+/home/matteo/Development/Sproutcore/bum/apps/bum/resources/core.js: 
+  scan_source: 
+    mtime: 1270030874
+    value: []
+
+/Users/matteo/Development/Sproutcore/bum/apps/bum/resources/style.css: 
+  scan_source: 
+    mtime: 1270817936
+    value: []
+
+/home/matteo/Development/Sproutcore/bum/apps/bum/resources/style.css: 
+  scan_source: 
+    mtime: 1270817936
+    value: []
+
+/home/matteo/Development/Sproutcore/bum/apps/bum/views/title.js: 
+  scan_source: 
+    mtime: 1270241143
+    value: []
+

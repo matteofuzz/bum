@@ -1,0 +1,59 @@
+/* >>>>>>>>>> BEGIN source/resources/style.css */
+div.menu-bar {
+	background: #221 url('resources/images/bar-bg.png') repeat-x;
+}
+div.menu-bar h1 {
+	margin: 10px;
+}
+.sproutcore-logo {
+	background: url('resources/images/Matteo_Marcury.jpg') no-repeat 0 -15px;
+}
+.help-icon {
+  width: 55px !important;
+  height: 32px !important;
+  background: url('/static/bum/en/current/resources/images/default-theme-dock-icons.png?1270728169') no-repeat -7px -480px;
+}
+.help-icon:hover {
+  width: 55px !important;
+  height: 32px !important;
+  background: url('/static/bum/en/current/resources/images/default-theme-dock-icons.png?1270728169') no-repeat -7px -544px;
+}
+.tab {
+	background: url('resources/images/sproutcore-logo.png') no-repeat bottom left;
+	padding: 10px;
+}
+h1.title-view {
+  background-color: red;
+}
+
+div.image {
+  position: absolute;
+  left: 10px;
+  top: 9px;
+  height: 32px;
+  width: 32px;
+  background-color: green;
+}
+
+span.name {
+  float: right;
+  margin-top: 9px;
+  margin-right: 10px;
+  width: 338px;
+  height: 32px;
+  background-color: blue;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+}
+
+div.blog-body{
+	margin-top: 10px;
+	background: #ccc;
+	color: #000;
+}
+
+div.rating-bar{
+	background: #100;
+}
+
