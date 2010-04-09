@@ -1,5 +1,7 @@
 div.menu-bar {
-	background: #221 url('resources/images/bar-bg.png') repeat-x;
+	background: #443 url('resources/images/bar-bg.png') repeat-x;
+	border-bottom: solid 1px rgb(132, 142, 162);
+	text-shadow: #554 0px -1px 0px;
 }
 div.menu-bar h1 {
 	margin: 10px;
@@ -7,15 +9,26 @@ div.menu-bar h1 {
 .sproutcore-logo {
 	background: url('resources/images/Matteo_Marcury.jpg') no-repeat 0 -15px;
 }
+.text-button {
+	border-left: solid 1px #554;
+	font-size: 14px !important;
+	padding-top: 10px !important;
+	text-align: center !important;
+	white-space: nowrap;
+	text-shadow: #554 0px -1px 0px;
+}
+.text-button:hover {
+	background: #333;
+}
 .help-icon {
   width: 55px !important;
   height: 32px !important;
-  background: url('/static/bum/en/current/resources/images/default-theme-dock-icons.png?1270728169') no-repeat -7px -480px;
+  background: url('/static/bum/en/current/resources/images/default-theme-dock-icons.png?1270728170') no-repeat -7px -480px;
 }
 .help-icon:hover {
   width: 55px !important;
   height: 32px !important;
-  background: url('/static/bum/en/current/resources/images/default-theme-dock-icons.png?1270728169') no-repeat -7px -544px;
+  background: url('/static/bum/en/current/resources/images/default-theme-dock-icons.png?1270728170') no-repeat -7px -544px;
 }
 .tab {
 	background: url('resources/images/sproutcore-logo.png') no-repeat bottom left;

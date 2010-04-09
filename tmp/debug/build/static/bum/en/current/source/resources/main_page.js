@@ -4,7 +4,7 @@
 // ==========================================================================
 /*globals Bum */
 
-sc_require('core');
+sc_require('core.js');
 sc_require('views/title');
 
 // This page describes the main user interface for your application.  
@@ -14,12 +14,12 @@ Bum.mainPage = SC.Page.design({
   // Add childViews to this pane for views to display immediately on page 
   // load.
   mainPane: SC.MainPane.design({
-    childViews: 'menuBar tabs titleView blogBodyView ratingBar'.w(),
+    childViews: 'menuBar tabs'.w(),
     
-		menuBar: SC.View.design(SC.Border, {
+		menuBar: SC.View.design({
       layout: { top: 0, left: 0, right: 0, height: 40 },
       classNames: ['menu-bar'],
-      childViews: 'logo title venditeButton acquistiButton DropDownMenuView DropDownMenuView2 helpButton'.w(),
+      childViews: 'logo title textButton endTextButton venditeButton acquistiButton DropDownMenuView DropDownMenuView2 helpButton'.w(),
 
 			logo: SC.LabelView.design({
 				layout: { top: 0, left: 10 },
@@ -33,6 +33,20 @@ Bum.mainPage = SC.Page.design({
 				value: '<h1>Bum app (by F5lab)</h1>'
 			}),
 			
+			textButton: SC.LabelView.design( SCUI.SimpleButton, {
+        layout: { centerY: 0, left: 300, height: 40, width: 100 },
+				value: 'Un bottone',
+        classNames: ['text-button'],
+        toolTip: 'text button',
+        target: 'Bum',
+        action: 'bo?'
+      }),
+
+			endTextButton: SC.LabelView.design({
+        layout: { centerY: 0, left: 401, height: 40, width: 0 },
+        classNames: ['text-button']
+      }),
+
 			venditeButton: SC.ButtonView.design({
 				layout: { top: 10, left: 420, height: 30, width: 80 },
 				title: 'vendite',
@@ -94,8 +108,43 @@ Bum.mainPage = SC.Page.design({
 	    itemValueKey: 'value',
      	layout: { left:12, right:12, top:52, bottom:12 },
      	userDefaultKey: "mainPane"
-		}),
+		})
 
+  }),
+
+	one: SC.View.design({
+    classNames: 'tab',
+    childViews: 'subOne subTwo'.w(),
+    
+    subOne: SC.LabelView.design(SCUI.ToolTip, {
+    	layout: { top: 30, height: 100, left: 30, width: 400 },
+    	escapeHTML: NO,
+    	toolTip: "This is subOne view.",
+    	value: "<h1>Bum Sproutcore test by F5lab</h1><p>First tab.</p><p><i>[subOne]</i></p>"
+    }),
+    
+    subTwo: SC.LabelView.design(SCUI.ToolTip, {
+    	layout: { top: 200, height: 100, left: 30, width: 400 },
+    	escapeHTML: NO,
+    	toolTip: "This is subTwo view.",
+    	value: "<p><i>[subTwo]</i></p>"
+    })
+
+  }),
+
+	two: SC.LabelView.design({
+    escapeHTML: NO,
+    classNames: 'tab',
+    value: "<p>Second tab.</p>"
+  }),
+
+	three: SC.LabelView.design({
+  	layout: { right: 30, top: 70, width: 400, height: 500 },
+		escapeHTML: NO,
+		value: '<p>Third tab.</p>',
+    classNames: 'tab',
+		childViews: 'titleView blogBodyView ratingBar'.w(),
+		
     titleView: Bum.TitleView.design({
     	layout: { right: 30, top: 70, width: 400, height: 50 },
     	classNames: ['another-custom-class'],
@@ -114,44 +163,6 @@ Bum.mainPage = SC.Page.design({
       layout: { right: 30, top: 540, width: 400, height: 32 },
       classNames: ['rating-bar']
     })
-  }),
-
-	one: SC.View.design({
-    classNames: 'tab',
-    childViews: 'subOne subTwo subThree'.w(),
-    
-    subOne: SC.LabelView.design(SCUI.ToolTip, {
-    	layout: { top: 30, height: 100, left: 30, width: 400 },
-    	escapeHTML: NO,
-    	toolTip: "This is subOne view.",
-    	value: "<h1>Bum Sproutcore test by F5lab</h1><p>First tab.</p><p><i>[subOne]</i></p>"
-    }),
-    
-    subTwo: SC.LabelView.design(SCUI.ToolTip, {
-    	layout: { top: 200, height: 100, left: 30, width: 400 },
-    	escapeHTML: NO,
-    	toolTip: "This is subTwo view.",
-    	value: "<p><i>[subTwo]</i></p>"
-    }),
-    
-    subThree: SC.LabelView.design(SCUI.SimpleButton, {
-        classNames: ['refresh-icon'],
-        toolTip: 'This is subThree view.',
-        target: 'Bum',
-        action: 'b'
-      }),
-  }),
-
-	two: SC.LabelView.design({
-    escapeHTML: NO,
-    classNames: 'tab',
-    value: "<p>Second tab.</p>"
-  }),
-
-	three: SC.LabelView.design({
-    escapeHTML: NO,
-    classNames: 'tab',
-    value: "<p>Third tab.</p>"
   })
 
 });
