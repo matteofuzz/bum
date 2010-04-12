@@ -5,3 +5,5 @@ Copyright: ©2010 F5lab.com
 
 This is a Sproutcore test project.
 
+NB. frameworks/scui has a .gitignore file, then don't appear.
+
