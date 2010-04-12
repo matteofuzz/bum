@@ -122,11 +122,13 @@ Bum.mainPage = SC.Page.design({
     	value: "<h1>Bum Sproutcore test by F5lab</h1><p>First tab.</p><p><i>[subOne]</i></p>"
     }),
     
-    subTwo: SC.LabelView.design(SCUI.ToolTip, {
+    subTwo: SC.WellView.design(SCUI.ToolTip, {
     	layout: { top: 200, height: 100, left: 30, width: 400 },
-    	escapeHTML: NO,
-    	toolTip: "This is subTwo view.",
-    	value: "<p><i>[subTwo]</i></p>"
+    	toolTip: "This is a WellView.",
+	    contentView: SC.LabelView.design(SCUI.ToolTip, {
+	    	escapeHTML: NO,
+	    	value: "<h2>This is a WellView ContainerView</h2><p><i>[subTwo]</i></p>"
+	    }),
     })
 
   }),

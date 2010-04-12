@@ -41,7 +41,7 @@
 
 /Users/matteo/Development/Sproutcore/bum/apps/bum/resources/main_page.js: 
   scan_source: 
-    mtime: 1271108133
+    mtime: 1271109713
     value: 
     - - sc_require
       - "'"
