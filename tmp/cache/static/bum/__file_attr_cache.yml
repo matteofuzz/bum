@@ -41,11 +41,8 @@
 
 /Users/matteo/Development/Sproutcore/bum/apps/bum/resources/main_page.js: 
   scan_source: 
-    mtime: 1270849846
+    mtime: 1271108133
     value: 
-    - - sc_require
-      - "'"
-      - core.js
     - - sc_require
       - "'"
       - views/title

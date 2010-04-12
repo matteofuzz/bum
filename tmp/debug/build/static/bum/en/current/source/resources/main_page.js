@@ -4,7 +4,6 @@
 // ==========================================================================
 /*globals Bum */
 
-sc_require('core.js');
 sc_require('views/title');
 
 // This page describes the main user interface for your application.  
@@ -138,10 +137,7 @@ Bum.mainPage = SC.Page.design({
     value: "<p>Second tab.</p>"
   }),
 
-	three: SC.LabelView.design({
-  	layout: { right: 30, top: 70, width: 400, height: 500 },
-		escapeHTML: NO,
-		value: '<p>Third tab.</p>',
+	three: SC.View.design({
     classNames: 'tab',
 		childViews: 'titleView blogBodyView ratingBar'.w(),
 		
