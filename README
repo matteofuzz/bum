@@ -6,6 +6,6 @@ Copyright: ©2010 F5lab.com
 This is a Sproutcore test project.
 
 .gitignore: tmp, *~
-frameworks/scui has is .gitignore file.
+frameworks/scui has his .gitignore file.
 
 
