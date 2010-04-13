@@ -1,7 +1,7 @@
 --- 
 /home/matteo/Development/Sproutcore/bum/apps/bum/main.js: 
   scan_source: 
-    mtime: 1271066012
+    mtime: 1271077135
     value: []
 
 /Users/matteo/Development/Sproutcore/bum/apps/bum/main.js: 
@@ -16,7 +16,7 @@
 
 /home/matteo/Development/Sproutcore/bum/apps/bum/resources/loading.rhtml: 
   scan_source: 
-    mtime: 1271066012
+    mtime: 1271077135
     value: []
 
 /Users/matteo/Development/Sproutcore/bum/apps/bum/views/title.js: 
@@ -26,7 +26,7 @@
 
 /home/matteo/Development/Sproutcore/bum/apps/bum/resources/main_page.js: 
   scan_source: 
-    mtime: 1271066012
+    mtime: 1271079486
     value: 
     - - sc_require
       - "'"
@@ -51,7 +51,7 @@
       - views/title
 /home/matteo/Development/Sproutcore/bum/apps/bum/views/rating_bar.js: 
   scan_source: 
-    mtime: 1271066012
+    mtime: 1271077135
     value: []
 
 /Users/matteo/Development/Sproutcore/bum/apps/bum/resources/core.js: 
@@ -61,12 +61,12 @@
 
 /home/matteo/Development/Sproutcore/bum/apps/bum/resources/core.js: 
   scan_source: 
-    mtime: 1271066012
+    mtime: 1271077135
     value: []
 
 /home/matteo/Development/Sproutcore/bum/apps/bum/resources/style.css: 
   scan_source: 
-    mtime: 1271066012
+    mtime: 1271077135
     value: []
 
 /Users/matteo/Development/Sproutcore/bum/apps/bum/resources/style.css: 
@@ -76,6 +76,6 @@
 
 /home/matteo/Development/Sproutcore/bum/apps/bum/views/title.js: 
   scan_source: 
-    mtime: 1271066012
+    mtime: 1271077135
     value: []
 
