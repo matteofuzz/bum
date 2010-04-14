@@ -35,7 +35,7 @@ Bum.mainPage = SC.Page.design({
 			textButton: SC.ButtonView.design(SCUI.DropDown, {
         layout: { centerY: 0, left: 300, height: 40, width: 100 },
 				title: 'Un bottone',
-        classNames: ['text-button'],
+        classNames: ['bar-button'],
         toolTip: 'text button with dropdown',
         target: 'Bum',
         action: 'bo?'
@@ -43,7 +43,7 @@ Bum.mainPage = SC.Page.design({
 
 			endTextButton: SC.LabelView.design({
         layout: { centerY: 0, left: 401, height: 40, width: 0 },
-        classNames: ['text-button']
+        classNames: ['bar-button']
       }),
 
 			venditeButton: SC.ButtonView.design({
