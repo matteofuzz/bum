@@ -1,5 +1,17 @@
+/* ==========================================================================
+*  Project:   BumTheme Theme Styles
+*  Copyright: ©2010 My Company, Inc.
+*  ==========================================================================
+*/
+
+/* 
+  Place any styles you want to define in this file.  You can also break your
+  styles into multiple files.  Just add them to your resources or .lrpoj
+  directories to be included in the build.
+*/
+
 div.menu-bar {
-	background: #443 url('resources/images/bar-bg.png') repeat-x;
+	background: #443 url('bum_images/bar-bg.png') repeat-x;
 	border-bottom: solid 1px rgb(132, 142, 162);
 	text-shadow: #554 0px -1px 0px;
 }
@@ -7,7 +19,7 @@ div.menu-bar h1 {
 	margin: 10px;
 }
 .sproutcore-logo {
-	background: url('resources/images/Matteo_Marcury.jpg') no-repeat 0 -15px;
+	background: url('bum_images/Matteo_Marcury.jpg') no-repeat 0 -15px;
 }
 .text-button {
 	border-left: solid 1px #554;
@@ -20,15 +32,15 @@ div.menu-bar h1 {
 .help-icon {
   width: 55px !important;
   height: 32px !important;
-  background: static_url('resources/images/default-theme-dock-icons.png') no-repeat -7px -480px;
+  background: static_url('bum_images/default-theme-dock-icons.png') no-repeat -7px -480px;
 }
 .help-icon:hover {
   width: 55px !important;
   height: 32px !important;
-  background: static_url('resources/images/default-theme-dock-icons.png') no-repeat -7px -544px;
+  background: static_url('bum_images/default-theme-dock-icons.png') no-repeat -7px -544px;
 }
 .tab {
-	background: url('resources/images/sproutcore-logo.png') no-repeat bottom left;
+	background: url('bum_images/sproutcore-logo.png') no-repeat bottom left;
 	padding: 10px;
 }
 h1.title-view {
