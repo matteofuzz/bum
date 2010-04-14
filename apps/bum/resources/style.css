@@ -17,9 +17,6 @@ div.menu-bar h1 {
 	white-space: nowrap;
 	text-shadow: #554 0px -1px 0px;
 }
-.text-button:hover {
-	background: #333;
-}
 .help-icon {
   width: 55px !important;
   height: 32px !important;

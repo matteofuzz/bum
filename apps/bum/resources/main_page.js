@@ -32,11 +32,11 @@ Bum.mainPage = SC.Page.design({
 				value: '<h1>Bum app (by F5lab)</h1>'
 			}),
 			
-			textButton: SC.LabelView.design( SCUI.SimpleButton, {
+			textButton: SC.ButtonView.design(SCUI.DropDown, {
         layout: { centerY: 0, left: 300, height: 40, width: 100 },
-				value: 'Un bottone',
+				title: 'Un bottone',
         classNames: ['text-button'],
-        toolTip: 'text button',
+        toolTip: 'text button with dropdown',
         target: 'Bum',
         action: 'bo?'
       }),
