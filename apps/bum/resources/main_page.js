@@ -18,7 +18,7 @@ Bum.mainPage = SC.Page.design({
 		menuBar: SC.View.design({
       layout: { top: 0, left: 0, right: 0, height: 40 },
       classNames: ['menu-bar'],
-      childViews: 'logo title textButton endTextButton venditeButton acquistiButton DropDownMenuView DropDownMenuView2 helpButton'.w(),
+      childViews: 'logo title textButton textButton2 endTextButton DropDownMenuView  helpButton'.w(),
 
 			logo: SC.LabelView.design({
 				layout: { top: 0, left: 10 },
@@ -29,20 +29,38 @@ Bum.mainPage = SC.Page.design({
 				layout: { top: 0, left: 100, height: 40 },
     		escapeHTML: NO,
 				classNames: ['title'],
-				value: '<h1>Bum app (by F5lab)</h1>'
+				value: '<h1>Bum app <spam class="small">(by F5lab)</small></h1>'
 			}),
 			
 			textButton: SC.ButtonView.design(SCUI.DropDown, {
         layout: { centerY: 0, left: 300, height: 40, width: 100 },
-				title: 'Un bottone',
+				title: 'Bottone 1',
         classNames: ['bar-button'],
         toolTip: 'text button with dropdown',
-        target: 'Bum',
-        action: 'bo?'
+        //buttonBehavior: SC.TOGGLE_BEHAVIOR, // css toggle with class "sel" 
+        dropDown: SC.MenuPane.design({
+          layout: { width: 100, height: 0 },
+    			contentView: SC.View.design({}),
+    			items: ["voce 1", "voce 2", "voce 3"]
+    		})
+      }),
+      
+      textButton2: SC.ButtonView.design(SCUI.SimpleButton, SCUI.DropDown, {
+        layout: { centerY: 0, left: 400, height: 40, width: 100 },
+				title: 'Bottone 2',
+        classNames: ['bar-button'],
+        toolTip: 'text button with dropdown',
+        hasState: YES,
+  			hasHover: YES,
+        dropDown: SC.MenuPane.design({
+          layout: { width: 100, height: 0 },
+    			contentView: SC.View.design({}),
+    			items: ["voce 1", "voce 2", "voce 3"]
+    		})
       }),
 
 			endTextButton: SC.LabelView.design({
-        layout: { centerY: 0, left: 401, height: 40, width: 0 },
+        layout: { centerY: 0, left: 501, height: 40, width: 0 },
         classNames: ['bar-button']
       }),
 

@@ -18,6 +18,9 @@ div.menu-bar {
 div.menu-bar h1 {
 	margin: 10px;
 }
+div.menu-bar h1 .small{
+	font-size: 12px !important;
+}
 .sproutcore-logo {
 	background: url('resources/bum_images/Matteo_Marcury.jpg') no-repeat 0 -15px;
 }
@@ -45,6 +48,10 @@ div.menu-bar h1 {
 .bar-button.active {
 	background: #333 !important;
 }
+.bar-button.hover {
+	background: #444 !important;
+}
+
 .help-icon {
   width: 55px !important;
   height: 32px !important;
