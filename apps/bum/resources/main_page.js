@@ -15,10 +15,10 @@ Bum.mainPage = SC.Page.design({
   mainPane: SC.MainPane.design({
     childViews: 'menuBar tabs'.w(),
     
-		menuBar: SC.View.design({
+		menuBar: SC.ToolbarView.design({
       layout: { top: 0, left: 0, right: 0, height: 40 },
       classNames: ['menu-bar'],
-      childViews: 'logo title textButton textButton2 endTextButton DropDownMenuView  helpButton'.w(),
+      childViews: 'logo title textButton textButton2 endTextButton DropDownMenuView helpButton'.w(),
 
 			logo: SC.LabelView.design({
 				layout: { top: 0, left: 10 },
@@ -41,6 +41,7 @@ Bum.mainPage = SC.Page.design({
         dropDown: SC.MenuPane.design({
           layout: { width: 100, height: 0 },
     			contentView: SC.View.design({}),
+					// isModal: NO, // lascia passare gli eventi, ma non chiude il pannello al click fuori...
     			items: ["voce 1", "voce 2", "voce 3"]
     		})
       }),
@@ -62,8 +63,8 @@ Bum.mainPage = SC.Page.design({
 			endTextButton: SC.LabelView.design({
         layout: { centerY: 0, left: 501, height: 40, width: 0 },
         classNames: ['bar-button']
-      }),
-
+      }),			
+			
 			venditeButton: SC.ButtonView.design({
 				layout: { top: 10, left: 420, height: 30, width: 80 },
 				title: 'vendite',
@@ -90,6 +91,15 @@ Bum.mainPage = SC.Page.design({
     		showCheckbox: NO
 			}),
 			
+			popup: SC.PopupButtonView.design({
+        layout: { centerY: 0, left: 740, height: 40, width: 100 },
+				title: 'popup',
+        classNames: ['bar-button'],
+				menu: SC.MenuPane.design({
+					items: ["primo","secondo"]
+				})
+      }),
+
 			DropDownMenuView2: SC.SelectFieldView.design({
     		layout: { top: 10, height: 25, left: 740, width: 130 },
     		/* If you want a dynamic title on the button,

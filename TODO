@@ -1,0 +1,16 @@
+***** IL MENU' PRINCIPALE *****
+Dovrei creare una nuova class MenuBar
++ proprietà:
+	- barItems ciascuno coi suoi MenuPane (e il secondo livello ?)
+	-
+	
+Il problema è fare in modo che una volta aperto un MenuPane, ovvero attivato il menù, il click fuori dal pane lo disattivi ma l'hover sulle voci del menù principale aprano (e chiudano) i MenuPane.
+
+Cioè il click su una voce del menù attiva l'hover sulle voci, e i menupane devono rimanere modali rispetto tutto TRANNE la menubar.
+Un'altro click sulla menubar disattiva la menubar.
+
+MenuBar: active, objects with title, icon and menuItems. Click toggles active = Yes/NO
+
+MenuPanes must be modal but delegate to MenuBar for hover management...
+
+It's not so simple...
