@@ -41,7 +41,7 @@ Bum.mainPage = SC.Page.design({
         dropDown: SC.MenuPane.design({
           layout: { width: 100, height: 0 },
     			contentView: SC.View.design({}),
-					// isModal: NO, // lascia passare gli eventi, ma non chiude il pannello al click fuori...
+					// isModal: NO,
     			items: ["voce 1", "voce 2", "voce 3"]
     		})
       }),
