@@ -161,10 +161,9 @@ Bum.mainPage = SC.Page.design({
 
   }),
 
-	two: SC.LabelView.design({
+	two: Bum.BarView.design({
     escapeHTML: NO,
-    classNames: 'tab',
-    value: "<p>Second tab.</p>"
+    classNames: 'tab'
   }),
 
 	three: SC.View.design({
