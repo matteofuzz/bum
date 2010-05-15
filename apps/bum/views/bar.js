@@ -22,7 +22,7 @@ Bum.BarView = SC.View.extend(
   	var animal = this.get('animal');
   	var color = this.get('color');
 
-		context = context.begin('div').addClass('bar-div').push(animal+color).end();
+		context = context.begin('div').addClass('bar-div').push(animal+' - '+color).end();
 		
 		sc_super();
 	},

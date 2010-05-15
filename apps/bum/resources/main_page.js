@@ -5,6 +5,19 @@
 /*globals Bum */
 
 sc_require('views/title');
+   
+var submenuitems = [
+{ title: 'sub uno'},
+{ title: 'sub due'}
+]; 
+var menuitems = [
+{ title: 'Menu Item', keyEquivalent: 'ctrl_shift_n', subMenu: submenuitems },
+{ title: 'Checked Menu Item', isChecked: YES, keyEquivalent: 'ctrl_a' },
+{ title: 'Selected Menu Item', keyEquivalent: 'backspace' },
+{ isSeparator: YES },
+{ title: 'Menu Item with Icon', icon: 'inbox', keyEquivalent: 'ctrl_m' },
+{ title: 'Menu Item with Icon', icon: 'folder', keyEquivalent: 'ctrl_p' }
+];
 
 // This page describes the main user interface for your application.  
 Bum.mainPage = SC.Page.design({
@@ -26,10 +39,10 @@ Bum.mainPage = SC.Page.design({
 			}),
 			
 			title: SC.LabelView.design({
-				layout: { top: 0, left: 100, height: 40 },
+				layout: { top: 0, left: 200, height: 40 },
     		escapeHTML: NO,
 				classNames: ['title'],
-				value: '<h1>Bum app <spam class="small">(by F5lab)</small></h1>'
+				value: '<h1>Bum app</h1>'
 			}),
 			
 			textButton: SC.ButtonView.design(SCUI.DropDown, {
@@ -42,10 +55,10 @@ Bum.mainPage = SC.Page.design({
           layout: { width: 100, height: 0 },
     			contentView: SC.View.design({}),
 					// isModal: NO,
-    			items: ["voce 1", "voce 2", "voce 3"]
+    			items: menuitems
     		})
       }),
-      
+
       textButton2: SC.ButtonView.design(SCUI.SimpleButton, SCUI.DropDown, {
         layout: { centerY: 0, left: 400, height: 40, width: 100 },
 				title: 'Bottone 2',
