@@ -100,3 +100,10 @@ div.blog-body{
 div.rating-bar{
 	background: #100;
 }
+
+
+.email-icon {
+  width: 16px;
+  height: 16px;
+  background: static_url('images/email.png') no-repeat;
+}

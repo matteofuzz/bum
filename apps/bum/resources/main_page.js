@@ -11,12 +11,12 @@ var submenuitems = [
 { title: 'sub due'}
 ]; 
 var menuitems = [
-{ title: 'Menu Item', keyEquivalent: 'ctrl_shift_n', subMenu: submenuitems },
-{ title: 'Checked Menu Item', isChecked: YES, keyEquivalent: 'ctrl_a' },
-{ title: 'Selected Menu Item', keyEquivalent: 'backspace' },
+{ title: 'Item with sub', keyEquivalent: 'ctrl_shift_n', subMenu: submenuitems, target: 'Bum' },
+{ title: 'Checked Item', isChecked: YES, keyEquivalent: 'ctrl_a', checkbox: YES },
+{ title: 'Selected Item', keyEquivalent: 'backspace' },
 { isSeparator: YES },
-{ title: 'Menu Item with Icon', icon: 'inbox', keyEquivalent: 'ctrl_m' },
-{ title: 'Menu Item with Icon', icon: 'folder', keyEquivalent: 'ctrl_p' }
+{ title: 'Item with Icon', icon: 'email-icon', keyEquivalent: 'ctrl_m' },
+{ title: 'Item with Icon', icon: 'folder', keyEquivalent: 'ctrl_p' }
 ];
 
 // This page describes the main user interface for your application.  
@@ -50,9 +50,15 @@ Bum.mainPage = SC.Page.design({
 				title: 'Bottone 1',
         classNames: ['bar-button'],
         toolTip: 'text button with dropdown',
-        //buttonBehavior: SC.TOGGLE_BEHAVIOR, // css toggle with class "sel" 
         dropDown: SC.MenuPane.design({
-          layout: { width: 100, height: 0 },
+          layout: { width: 170, height: 0 },
+          itemTitleKey: 'title',
+          itemIconKey: 'icon',
+          itemTargetKey: 'target',
+          itemActionKey: 'action',
+          itemSeparatorKey: 'isSeparator',
+          itemIsEnabledKey: 'isEnabled',
+          itemCheckboxKey: 'checkbox',
     			contentView: SC.View.design({}),
 					// isModal: NO,
     			items: menuitems
